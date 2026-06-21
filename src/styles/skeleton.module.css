@@ -1,0 +1,101 @@
+@keyframes shimmer {
+  0% { background-position: -1000px 0; }
+  100% { background-position: 1000px 0; }
+}
+
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    #f0f0f0 25%,
+    #e0e0e0 50%,
+    #f0f0f0 75%
+  );
+  background-size: 1000px 100%;
+  animation: shimmer 2s infinite linear;
+  border-radius: 4px;
+}
+
+.skeleton_text {
+  height: 16px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+}
+
+.skeleton_title {
+  height: 24px;
+  margin-bottom: 12px;
+  border-radius: 4px;
+}
+
+.skeleton_image {
+  border-radius: 4px;
+}
+
+.skeleton_btn {
+  height: 40px;
+  border-radius: 4px;
+}
+
+/* For You Page Skeletons */
+.selected_book_skeleton {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #faf8f4;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 32px;
+  max-width: 640px;
+}
+
+.selected_book_skeleton_text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.books_row_skeleton {
+  display: flex;
+  gap: 16px;
+  overflow: hidden;
+  padding-bottom: 16px;
+}
+
+.book_card_skeleton {
+  width: 160px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Book Detail Skeleton */
+.book_detail_skeleton {
+  display: flex;
+  gap: 48px;
+  padding: 32px;
+  max-width: 1000px;
+}
+
+.book_detail_left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.book_detail_right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Settings Skeleton */
+.settings_skeleton {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 500px;
+  padding: 32px;
+}
